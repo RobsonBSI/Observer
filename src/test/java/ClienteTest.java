@@ -38,7 +38,7 @@ class ClienteTest {
         assertEquals("Julio,O Pedido(Hamburguer Artesanal,Valor= 15.0),Foi Aceito", cliente1.getUltimaNotificacao());
     }
     @Test
-    void naoDeveNotificarAluno() {
+    void naoDeveNotificarCliente() {
         Pedido pedido = new Pedido(001, "X Bacon",20.50f);
         Cliente cliente = new Cliente("Robson");
         cliente.RegistraPedido(pedido);
